@@ -1,20 +1,15 @@
 var saisie = prompt("Entrez un nombre : "); // saisie est de type chaîne
 var nb = Number(saisie); // nb est de type nombre
 
-
-
 var chiffre= prompt("Entrez un nombre");
 
 var tva = chiffre * 1.196
-
 console.log("Le prix ttc du produit est de : " + tva);
-
 
 
 var celcius = prompt("Entrez la température :");
 var f = celcius*(9/5) + 32;
 console.log(celcius+" °C =" + f + " °F");
-
 
 
 var jour = prompt("Entrez un jour de la semaine");
@@ -45,8 +40,6 @@ default:
 }
 
 
-
-
 var jour = prompt("Entrez un jour de la semaine");
 
 if(jour === "lundi")
@@ -55,7 +48,7 @@ if(jour === "lundi")
 }
 else{
 
-		if (jour === "mardi")
+	if (jour === "mardi")
 	{
 		console.log("demain c'est mercredi");
 	}
@@ -115,8 +108,6 @@ switch(mois){
 
 
 //Exercice : afficher l'heure une seconde plus tard
-
-
 var heures = Number(prompt("Entrez les heures :"));
 var minutes = Number(prompt("Entrez les minutes :"));
 var secondes = Number(prompt("Entrez les secondes :"));
@@ -140,8 +131,6 @@ var secondes = Number(prompt("Entrez les secondes :"));
 		}
 		console.log(heures+"h"+minutes+"m"+secondes+"s");
 	}
-
-
 	else
 	{
 		console.log("Erreur");
@@ -172,8 +161,6 @@ while (lettre != "X") {
     console.log(lettre);
 }
 
-
-
 var nombre = 0; // Valeur initiale permettant d'entrer dans la boucle
 while ((nombre < 50) || (nombre > 100)) {
     nombre = Number(prompt("Entrez un nombre entre 50 et 100 : "));
@@ -181,21 +168,16 @@ while ((nombre < 50) || (nombre > 100)) {
 
 
 //table multiplication
-
 var nombre = 0; // Valeur par défaut permettant d'entrer dans la boucle
 while ((nombre < 2) || (nombre > 9)) {
     nombre = Number(prompt("Entrez un nombre entre 2 et 9 : "));
 }
-
 var multiple = 0; 
-
 	while(multiple <= 10)
 	{
 		console.log(nombre + " x " + multiple + " = " + nombre*multiple);
 		multiple++;
 	}
-
-
 
 
 var saisie = prompt("Voulez-vous jouer au ni oui, ni non ?");
@@ -214,6 +196,7 @@ for (var i = 1; i <= 7; i++) {
     console.log(ligne);
 }
 
+// Fizz Buzz
 for (var nombre = 1 ; nombre <= 100; nombre++)
 {
 	if((nombre % 3 === 0) && (nombre % 5 === 0))
@@ -240,11 +223,8 @@ console.log(solution);
 var rayonuser = Number(prompt("Entrez le rayon pour calculer le périmètre d'un cercle"));
 	function perimetre(chiffre1 , Pi, chiffre2)
 	{
-		
 		var resultat;
-		
-			resultat = chiffre1 * Pi * chiffre2;
-		
+		resultat = chiffre1 * Pi * chiffre2;
 
 		return resultat; 
 	}
@@ -258,12 +238,9 @@ var rayonuser2 = Number(prompt("Entrez le rayon pour calculer l'aire d'un cercle
 
 	function aire(chiffre1, chiffre2)
 	{
-		
 		var resultat2;
+		resultat2 = chiffre1 * chiffre2 * chiffre2;
 		
-			resultat2 = chiffre1 * chiffre2 * chiffre2;
-		
-
 		return resultat2;
 	}
 console.log("L'aire du cercle est de : " + aire(Math.PI, rayonuser2)); // Doit afficher -2
@@ -305,16 +282,12 @@ var perso = {
     force: 25,
 
     // Renvoie la description du personnage
-
     decrire: function () {
         var description = this.nom + " a " + this.sante + " points de vie et " +
             this.force + " en force";
         return description;
     }
-
 };
-
-
 console.log(perso.decrire());
 // Aurora est blessée par une flèche
 perso.sante = perso.sante - 20;
@@ -489,15 +462,12 @@ console.log(perso2.decrire());
 
 //Ex 4
 var Personnage = {
-
-
 	init: function(nom, sante, force){
 		this.nom = nom;
 	    this.sante = sante;
 	    this.force = force;
 	    this.xp = 0;
 	},
-   
     // Renvoie la description du personnage
     decrire: function () {
         var description = this.nom + " a " + this.sante + " points de vie, " +
@@ -518,8 +488,6 @@ console.log(perso2.decrire());
 */
 
 //Mini-jeu de rôle
-
-
 var Personnage = {
     // Initialise le personnage
     initPerso: function (nom, sante, force) {
@@ -741,9 +709,7 @@ for(i = 0; i < heros.length; i++)
 }
 heros.push("Django");
 heros.forEach(function (film) {
-
     console.log(film);
-
 });
 
 var valeurs = [11, 3, 7, 2, 9, 10];
@@ -760,8 +726,6 @@ console.log(somme);
 
 
 //Exercice : gestion d'un chenil
-
-
 var Chien = {
     // initialise le chien
     init: function (nom, race, taille) {
