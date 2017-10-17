@@ -1,5 +1,5 @@
 var saisie = prompt("Entrez un nombre : "); // saisie est de type chaîne
-var nb = Number(saisie); // nb est de type nombre
+var nb = Number(saisie); // nb est de type nombr
 
 var chiffre= prompt("Entrez un nombre");
 
